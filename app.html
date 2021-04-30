@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body onload="myFunction()">
+
+    <div class="container my-5 mx-auto">
+        <h1 class="text-center my-4">Wheater App</h1>
+
+
+        <div class="card shadow-lg rounded d-none" style=" height:800px">
+
+            <div class="container weather">
+                <div class=" icon bg-light mx-auto text-center">
+                    <img src="" alt="">
+                </div>
+                <div class="text-uppercase text-center detail">
+
+                </div>
+
+
+            </div>
+            <form class="change-location my-4 text-center">
+                <label for="city">Enter a location for weather information</label>
+                <input type="text" name="city" class="form-control p-3">
+            </form>
+
+
+            <div class="nextDays">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="scripts/forcast.js"></script>
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
